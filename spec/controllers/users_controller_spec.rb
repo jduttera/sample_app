@@ -372,6 +372,7 @@ describe UsersController do
         response.should redirect_to(signin_path)
       end
 
+
       it "should protect 'followers'" do
         get :followers, :id => 1
         response.should redirect_to(signin_path)
