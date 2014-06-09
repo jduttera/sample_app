@@ -31,6 +31,7 @@ def make_microposts
       user.microposts.create!(:content => Faker::Lorem.sentence(5))
     end
   end
+
 end
 
 def make_relationships
